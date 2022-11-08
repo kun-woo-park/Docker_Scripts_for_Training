@@ -13,7 +13,12 @@ make build
 make eth_setup
 ```
 
-## 4. Start docker machine
+## 4. Add Xwindow authority for docker
+```bash
+sudo xhost +local:docker
+```
+
+## 5. Start docker machine
 ```bash
 # if it needs, add ip and network options when running the docker machine
 make start
