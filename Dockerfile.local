@@ -1,0 +1,17 @@
+ARG base_image_name
+FROM ${base_image_name}
+
+ARG localuser_name
+ARG localuser_id
+ARG localuser_gid
+
+USER root
+
+RUN apt update \
+ && apt install -y vim \
+ && groupadd -fg ${localuser_gid} ${localuser_name} \
+ && useradd -ms /bin/bash ${localuser_name} -u ${localuser_id} -g ${localuser_gid} \
+ && usermod -aG sudo ${localuser_name} \
+ && echo "${localuser_name} ALL=(ALL) NOPASSWD:ALL" >/etc/sudoers.d/${localuser_name}_sudo
+
+USER ${localuser_name}
