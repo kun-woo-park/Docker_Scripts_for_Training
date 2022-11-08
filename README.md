@@ -25,7 +25,7 @@ make start
 ```
 ## 6. Install gedit and libxrender1 inside docker container
 ```bash
-docker exec -it planning_training_kunwoo
+docker exec -it planning_train_kunwoo /bin/bash
 sudo apt-get install libxrender1
 sudo apt-get install gedit
 ```
