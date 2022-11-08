@@ -64,6 +64,8 @@ RUN mkdir -p /ides
 COPY pycharm.tar.gz /ides/
 COPY clion.tar.gz /ides/
 RUN cd /ides/ && tar -xvzf pycharm.tar.gz && tar -xvzf clion.tar.gz
+ENV PATH="${PATH}:/ides/pycharm-2022.2.3/bin"
+ENV PATH="${PATH}:/ides/clion-2022.2.4/bin"
 
 
 RUN echo "base image build complete...."

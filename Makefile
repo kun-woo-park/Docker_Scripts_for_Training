@@ -72,6 +72,12 @@ start:
 		--workdir $(HOME) \
 		-p 8000:8000 \
 		-p 8001:8001 \
+		-e DISPLAY -e TERM \
+		-e QT_X11_NO_MITSHM=1 \
+		-e XAUTHORITY=/tmp/.docker0lhyjlnb.xauth \
+		-v /tmp/.docker0lhyjlnb.xauth:/tmp/.docker0lhyjlnb.xauth \
+		-v /tmp/.X11-unix:/tmp/.X11-unix \
+		-v /etc/localtime:/etc/localtime:ro \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-tid \
 		$(IMAGE_NAME)
