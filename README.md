@@ -23,3 +23,9 @@ sudo xhost +local:docker
 # if it needs, add ip and network options when running the docker machine
 make start
 ```
+## 6. Install gedit and libxrender1 inside docker container
+```bash
+docker exec -it planning_training_kunwoo
+sudo apt-get install libxrender1
+sudo apt-get install gedit
+```
