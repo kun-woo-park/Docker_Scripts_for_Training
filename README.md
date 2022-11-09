@@ -29,3 +29,8 @@ docker exec -it planning_train_kunwoo /bin/bash
 sudo apt-get install libxrender1
 sudo apt-get install gedit
 ```
+
+## 7. Install compatible tensorflow
+```bash
+pip install tensorflow==2.10
+```
