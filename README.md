@@ -32,5 +32,5 @@ sudo apt-get install gedit
 
 ## 7. Install compatible tensorflow
 ```bash
-pip install tensorflow==2.10
+pip install tensorflow==2.5
 ```
