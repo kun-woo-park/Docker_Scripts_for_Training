@@ -30,7 +30,7 @@ sudo apt-get install libxrender1
 sudo apt-get install gedit
 ```
 
-## 7. Install compatible tensorflow
+## 7. Install compatible tensorflow(TF 2.5 for CUDA 11.2)
 ```bash
 pip install tensorflow==2.5
 ```
