@@ -3,7 +3,7 @@ This repository is about implementing fundamental docker environment for trainin
 
 ## 1. Download jetbrain [IDE kits](https://www.jetbrains.com/ko-kr/) and rename them as clion.tar.gz and pycharm.tar.gz respectively
 
-## 2. Build docker image(should change image name if it is needed)
+## 2. Build docker image(should change name of image if it is needed)
 ```bash
 make build
 ```
