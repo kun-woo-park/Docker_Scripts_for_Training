@@ -1,5 +1,5 @@
 # Docker Scripts for Training
-This repository is about implementing fundamental docker environment for training DL model shortly
+This repository is about implementing fundamental docker environment for training DL model shortly (assuming docker and nvidia docker toolkit are already installed)
 
 ## 1. Download jetbrain [IDE kits](https://www.jetbrains.com/ko-kr/) and rename them as clion.tar.gz and pycharm.tar.gz respectively
 
