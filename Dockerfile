@@ -56,13 +56,14 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 ENV PATH=$CONDA_DIR/bin:$PATH
 RUN conda install python=3.9
 RUN conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch
+RUN conda install -c conda-forge mpi4py openmpi
+RUN conda install "setuptools <65"
 RUN pip install Pillow==8.4.0
 RUN pip install tqdm
 RUN pip install torchpack
 RUN pip install mmcv==1.4.0 mmcv-full==1.4.0 mmdet==2.20.0
 RUN pip install nuscenes-devkit
-RUN pip install mpi4py==3.0.3
-RUN pip install numba==0.48.0
+RUN conda install numba
 
 
 # Set up a locale for the python 3 version of bitbake
